@@ -1,8 +1,54 @@
 @import 'core/settings';
 @import 'core/links';
+@import 'core/header';
 
-body {
-	background: url('../images/logo-adalab-80px.png') center center no-repeat $color-white;
-	margin: 0;
-	height: 100vh;
+* {
+    font-family: 'Roboto Slab', serif;
 }
+.page {
+    margin: 0px;
+}
+.hero{
+    height: 568px;
+    background-image: url(../images/cover.jpg);
+    background-size: cover;
+    background-position: center;
+    @media all and (min-width:768px){
+        height: 100vh;
+        background-size: cover;
+    }
+    .hero--text{
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        margin: auto;
+        padding-top: 32vh;
+        .hero--title{
+            color: white;
+            text-transform: uppercase;
+            text-align: center;
+            font-size: 2.62rem;
+            margin: 0px 15px 10px 15px;
+        }
+        .hero--subt{
+            color: white;
+            text-align: center;
+            margin: 0px 0px 45px 0px;
+        }
+        .hero--btn{
+            width: 45px;
+            height:45px;
+            border-radius: 22.5px;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .scroll-down-icon{
+                width: 20px;
+                height: auto;
+                color: #f26002;
+            }
+        }
+    }
+}
+
