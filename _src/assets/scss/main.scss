@@ -57,6 +57,7 @@
         color: #8ccbea;
         font-size: 14px;
         text-transform: capitalize;
+        padding: 0 0 1px 0;
     }
     .firstsection--title{
         margin: 0px;
@@ -68,7 +69,8 @@
         color: #4a4a4a;
         font-size: 18px;
         line-height: 1.67;
-        margin: 15px 0 30px 0;
+        padding: 15px 0 30px 0;
+        margin: 0px;
     }
     .btn{
         width: 76px;
@@ -81,6 +83,57 @@
         font-weight: 500;
         text-transform: uppercase;
         text-align: center;
-        
     }
 }
+.maincontent{
+    display:flex;
+    flex-direction: column;
+    align-content: center;
+    height: 624px;
+    padding: 30px 0 60px 0px;
+    background-color: $background-main;
+    .maincontent--title{
+        font-family: $font-title;
+        font-size: 24px;
+        font-weight: bold;
+        line-height: 1.25;
+        text-align: center;
+        text-transform: capitalize;
+    }
+    .maincontent--table{
+        display: grid;
+        justify-content: center;
+        grid-template-columns:184px;
+        grid-template-rows: 120px 120px 120px;
+        grid-gap: 45px;
+        .reason--title{
+            font-family: $font-title;
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+            text-transform: capitalize;
+        }
+        .reason--text{
+            font-family: $font-text;
+            font-size: 18px;
+            line-height: 1.67;
+            text-align: center;
+        }
+    }
+    .btn-default{
+        width: 184px;
+        height: 45px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 45px;
+        border-radius: 22.5px;
+        background-color: $color-main;
+        font-family: $font-text;
+        font-size: 20px;
+        color: white;
+        text-transform: capitalize;
+        align-content: center;
+
+    }
+}
+
