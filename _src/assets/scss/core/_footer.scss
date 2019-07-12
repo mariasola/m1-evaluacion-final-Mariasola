@@ -6,9 +6,17 @@
     justify-content: center;
     align-items: center;
     position: relative;
+    @media all and (min-width:768px){
+        height: 240px;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
     .footer--button{
         position: absolute;
         bottom: 442.5px;
+        @media all and (min-width:768px){
+            bottom: 217.5px;
+        }
         .footer--button--link{
             width: 45px;
             height:45px;
@@ -40,6 +48,9 @@
         flex-direction: column;
         justify-content: center;
         text-align: center;
+        @media all and (min-width:768px){
+            order: -1;
+        }
         .footer--copy--motto{
             font-size: 14px;
             line-height: 2.14;
