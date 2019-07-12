@@ -17,16 +17,29 @@
         @media all and (min-width:768px){
             bottom: 217.5px;
         }
+        &:hover{
+            animation: 'scroll-up' linear 1s infinite;
+        }
         .footer--button--link{
             width: 45px;
             height:45px;
             border-radius: 22.5px;
+            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
             background-color: white;
             display: flex;
             justify-content: center;
             align-items: center;
         }
     }
+    @keyframes scroll-up {
+        from{
+            bottom: 217.5px;
+        }
+        to{
+            bottom: 234px;
+        }
+    }
+
     .footer--menu,.footer--social{
         text-transform: uppercase;
         font-family: $font-title;
@@ -48,6 +61,7 @@
         flex-direction: column;
         justify-content: center;
         text-align: center;
+        padding: 30px 0 0 0;
         @media all and (min-width:768px){
             order: -1;
         }
