@@ -1,18 +1,52 @@
 .footer{
+    height: 465px;
     background: $background-footer;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-.footer--button{
-    width: 45px;
-    height:45px;
-    border-radius: 22.5px;
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    // position: absolute;
-    // transform: translate(0,-50%);
-    // animation-duration: 5s;
+    position: relative;
+    .footer--button{
+        position: absolute;
+        bottom: 442.5px;
+        .footer--button--link{
+            width: 45px;
+            height:45px;
+            border-radius: 22.5px;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    .footer--menu,.footer--social{
+        text-transform: uppercase;
+        font-family: $font-title;
+        .footer--menu--list,.footer--social--list{
+            list-style: none;
+            font-family: $font-text;
+            text-align: center;
+            line-height: 1.88;
+            padding: 0px;
+            .footer--menu--link,.footer--social--link{
+                text-decoration: none;
+                color: white;
+            }
+        }
+    }
+    .footer--copy{
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        .footer--copy--motto{
+            font-size: 14px;
+            line-height: 2.14;
+            .footer--copy--heart{
+                color: $color-main;
+            }
+        }
+    }
+    
 }
