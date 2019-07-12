@@ -20,16 +20,17 @@
         height: 100vh;
     }
     .hero--text{
+        height: 515px;
         display: flex;
         flex-flow: column wrap;
         align-items: center;
-        margin: auto;
-        padding-top: 32vh;
+        justify-content: flex-end;
+        // padding: 0 0 53px 0;
         @media all and (min-width:768px){
-            padding-top: 41vh;
+            height: 723px;
         }
         @media all and (min-width:1280px){
-            padding-top: 53vh;
+            height: 755px;
         }
         .hero--title{
             width: 290px;
