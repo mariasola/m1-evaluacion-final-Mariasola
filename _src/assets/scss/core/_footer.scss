@@ -19,6 +19,7 @@
         position: absolute;
         top: 0;
         transform: translateY(-23px);
+        align-self: center;
         &:hover{
             animation: 'scroll-up' linear 1s infinite;
         }
