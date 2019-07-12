@@ -4,19 +4,21 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: initial;
     position: relative;
     @media all and (min-width:768px){
-        height: 240px;
+        height: 242.5px;
         flex-direction: row;
         justify-content: space-evenly;
+        padding: 30px 39px;
+    }
+    @media all and (min-width:1200px){
+        padding: 30px 300px;
     }
     .footer--button{
         position: absolute;
-        bottom: 442.5px;
-        @media all and (min-width:768px){
-            bottom: 217.5px;
-        }
+        top: 0;
+        transform: translateY(-23px);
         &:hover{
             animation: 'scroll-up' linear 1s infinite;
         }
@@ -33,13 +35,12 @@
     }
     @keyframes scroll-up {
         from{
-            bottom: 217.5px;
+            transform: translateY(-23px);
         }
         to{
-            bottom: 234px;
+            transform: translateY(-50px);
         }
     }
-
     .footer--menu,.footer--social{
         text-transform: uppercase;
         font-family: $font-title;
@@ -49,6 +50,9 @@
             text-align: center;
             line-height: 1.88;
             padding: 0px;
+            @media all and (min-width:768px){
+                text-align:left;
+            }
             .footer--menu--link,.footer--social--link{
                 text-decoration: none;
                 color: white;
@@ -64,6 +68,8 @@
         padding: 30px 0 0 0;
         @media all and (min-width:768px){
             order: -1;
+            text-align:left;
+            justify-content: flex-start;
         }
         .footer--copy--motto{
             font-size: 14px;
