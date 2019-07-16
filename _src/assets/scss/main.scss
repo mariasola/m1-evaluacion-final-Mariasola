@@ -69,6 +69,9 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            @media all and (max-width:768px){
+                display:none;
+            }
             .scroll-down-icon{
                 width: 20px;
                 height: auto;
@@ -95,6 +98,8 @@
 .firstsection{
     margin: 30px 15px 45px 15px;
     @media all and (min-width:768px){
+        display: flex;
+        flex-direction: column;
         margin: 30px 39px 45px 39px;
     }
     @media all and (min-width:1280px){
@@ -120,6 +125,7 @@
         font-family: $font-title;
         text-transform: capitalize;
         @media all and (min-width:768px){
+            order: -1;
             font-size: 1.625rem;
             line-height: 1.73;
         }
@@ -132,11 +138,12 @@
         color: #4a4a4a;
         font-size: 1.125rem;
         line-height: 1.67;
-        padding: 15px 0 30px 0;
+        padding: 15px 0 20px 0;
         margin: 0px;
         @media all and (min-width:768px){
             font-size: 1.25rem;
             line-height: 1.5;
+            padding: 15px 0 30px 0;
         }
         @media all and (min-width:1280px){
             font-size: 1.25rem;
@@ -148,16 +155,15 @@
         width: 76px;
         height: 45px;
         border-radius: 22.5px;
-        border: $color-main solid 2px;
-        color: $color-main;
-        background-color: white;
+        background-color: $color-main;
+        color: white;
         font-size: 1.25rem;
         font-weight: 500;
         text-transform: uppercase;
         text-align: center;
         &:hover{
-            background-color: $color-main;
-            color: white;
+            background-color: white;
+            color: $color-main;
         }
         @media all and (min-width:1280px){
             width: 160px;
